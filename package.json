@@ -1,0 +1,15 @@
+{
+  "name": "nextjs-ubike",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "now && now alias"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "7.0.2",
+    "react": "16.6.3",
+    "react-dom": "16.6.3"
+  }
+}
