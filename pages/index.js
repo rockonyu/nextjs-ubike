@@ -1,7 +1,7 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch'
-import Head from '../components/Head'
-import Nav from '../components/Nav'
+import Head from '../components/head'
+import Nav from '../components/nav'
 import MyMapComponent from '../components/MyMapComponent'
 
 class Home extends React.Component {
