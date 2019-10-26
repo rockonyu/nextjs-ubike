@@ -30,19 +30,19 @@ class Home extends React.Component {
   }
 
   static async getInitialProps({ req }) {
-    const res = await fetch('https://data.taipei/youbike')
+    const res = await fetch(
+      'https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.json',
+    )
     const json = await res.json()
-
     const markers =
       json.retCode === 1 ? Object.values(json.retVal).map(item => item) : []
-    console.log(markers)
     return { markers }
   }
 
   render() {
     return (
       <div>
-        <Head title="Find Next Ubike" />
+        <Head title="Find Nearby Ubike" />
         <MyMapComponent pos={this.state.pos} markers={this.props.markers} />
         <Nav />
       </div>
