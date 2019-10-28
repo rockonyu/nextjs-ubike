@@ -1,6 +1,0 @@
-{
-  "version": 2,
-  "alias": ["ubike.now.sh"],
-  "name": "nextjs-ubike",
-  "builds": [{ "src": "package.json", "use": "@now/next" }]
-}
